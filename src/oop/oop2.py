@@ -1,5 +1,4 @@
 # To the GroundVehicle class, add method drive() that returns "vroooom".
-#
 # Also change it so the num_wheels defaults to 4 if not specified when the
 # object is constructed.
 
@@ -8,9 +7,8 @@ class GroundVehicle():
         self.num_wheels = num_wheels
 
     # TODO
-
     def drive(self):
-        return: "vroooom"
+        return "vroooom"
 
 # Subclass Motorcycle from GroundVehicle.
 #
@@ -27,7 +25,7 @@ class Motorcycle(GroundVehicle):
         super().__init__(num_wheels)
 
     def drive(self):
-        return: "BRAAAP!!"
+        return "BRAAAP!!"
 
 vehicles = [
     GroundVehicle(),
@@ -42,5 +40,5 @@ vehicles = [
 # TODO
 
 for vehicle in vehicles:
-    print(f"{vehicle.drive()}")
+    print(vehicle.drive())
 
